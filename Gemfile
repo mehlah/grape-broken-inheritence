@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rack'
 gem 'grape'
+gem 'activesupport'
 
 group :development do
   gem 'rake', '~> 10.0.3'
