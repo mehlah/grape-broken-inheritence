@@ -1,8 +1,6 @@
 module Acme
   module V2
-    class Base < Grape::API
-      version 'v2', using: :path
-
+    class Foo < Grape::API
       desc 'Returns the current API version, v2.'
       get do
         { version: 'v2' }
