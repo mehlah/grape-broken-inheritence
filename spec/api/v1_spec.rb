@@ -41,5 +41,11 @@ describe Acme::App do
       get '/not_found'
       expect(last_response.status).to eq(404)
     end
+
+    it 'bar returns from v1' do
+      get '/v1/bar'
+      expect(last_response.status).to eq(200)
+      expect(last_response.body).to eq({ version: 'v1_bar' }.to_json)
+    end
   end
 end
